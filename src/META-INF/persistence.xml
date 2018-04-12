@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="holi_manager" transaction-type="RESOURCE_LOCAL">
+		<class>taowang6000.holi.domain.AdminUser</class>
+		<class>taowang6000.holi.domain.CheckoutOrder</class>
+		<class>taowang6000.holi.domain.Item</class>
+		<class>taowang6000.holi.domain.PasswordResetToken</class>
+		<class>taowang6000.holi.domain.Role</class>
+		<class>taowang6000.holi.domain.SpringSession</class>
+		<class>taowang6000.holi.domain.SpringSessionAttribute</class>
+		<class>taowang6000.holi.domain.SpringSessionAttributePK</class>
+		<class>taowang6000.holi.domain.UserAccount</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/online_shopping"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="database"/>
+			<property name="eclipselink.logging.level" value="FINE"/>
+			<property name="eclipselink.query-results-cache" value="false"/>
+			<property name='eclipselink.cache.shared.default' value="false"/>
+			<property name="javax.persistence.jdbc.password" value="root"/>
+		</properties>
+	</persistence-unit>
+</persistence>
